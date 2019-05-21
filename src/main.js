@@ -6,7 +6,7 @@ import App from "./App";
 import Quasar, * as All from "quasar/dist/quasar.umd.js";
 import "quasar/dist/quasar.css";
 import VeeValidate from "vee-validate";
-import Vue2Filters from 'vue2-filters';
+import Vue2Filters from "vue2-filters";
 
 Vue.use(VeeValidate, {
   validity: true
@@ -22,7 +22,7 @@ Vue.use(Quasar, {
   }
 });
 
-Vue.use(Vue2Filters)
+Vue.use(Vue2Filters);
 
 new Vue({
   el: "#app",

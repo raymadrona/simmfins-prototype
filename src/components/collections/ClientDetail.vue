@@ -16,9 +16,9 @@
               <q-layout class="bg-white">
                 <q-toolbar class="bg-primary text-white">
                   <q-toolbar-title>Manage Collection</q-toolbar-title>
+
                   <q-btn flat round dense icon="fas fa-times" size="10px" @click="dialog = false"/>
                 </q-toolbar>
-
                 <q-card flat>
                   <q-card-section>
                     <q-item class="q-pa-none">
@@ -77,10 +77,10 @@
                     </q-item-section>-->
                   </q-card-section>
                 </q-card>
-                <q-footer expand position="bottom">
+                <q-page-sticky expand position="bottom">
                   <div class="row full-width">
                     <div class="col">
-                      <q-tabs v-model="tab" dense class="bg-grey-2 text-primary" switch-indicator>
+                      <q-tabs v-model="tab" dense switch-indicator class="bg-grey-2 text-primary">
                         <q-tab class="text-green" name="loans" icon="fas fa-cash-register"/>
                         <q-tab class="text-teal" name="collections" icon="fas fa-coins"/>
                         <q-tab class="text-orange" name="savings" icon="fas fa-piggy-bank"/>
@@ -89,7 +89,7 @@
                       </q-tabs>
                     </div>
                   </div>
-                </q-footer>
+                </q-page-sticky>
               </q-layout>
             </q-dialog>
           </div>

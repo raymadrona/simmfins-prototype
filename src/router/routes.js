@@ -3,11 +3,11 @@ const routes = [
     path: "/",
     //component: () => import("../layouts/Landing.vue")
     // component: () => import("../components/collections/ClientsList.vue")
-    component: () => import("../components/collections/ClientDetail.vue")
+    component: () => import("../components/Home.vue")
   },
   {
-    path: "/home",
-    component: () => import("../layouts/MainLayout.vue"),
+    path: "/collection",
+    component: () => import("../components/collections/ClientsList.vue"),
     children: [
       {
         path: "",
